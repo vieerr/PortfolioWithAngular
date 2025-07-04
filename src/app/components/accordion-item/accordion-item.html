@@ -1,0 +1,12 @@
+<div class="accordion-item">
+  <button
+    class="accordion-trigger"
+    (click)="isOpen = !isOpen"
+    [class.active]="isOpen"
+  >
+    {{ title }}
+  </button>
+  <div class="accordion-content" [class.show]="isOpen">
+    <ng-content></ng-content>
+  </div>
+</div>

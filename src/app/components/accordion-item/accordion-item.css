@@ -1,0 +1,24 @@
+    .accordion-trigger {
+      width: 100%;
+      text-align: left;
+      padding: 1rem;
+      border: none;
+      background: #f1f1f1;
+      cursor: pointer;
+    }
+
+    .accordion-trigger.active {
+      background: #ddd;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    .accordion-content.show {
+      max-height: 500px;
+      padding: 1rem;
+      border: 1px solid #ddd;
+    }
